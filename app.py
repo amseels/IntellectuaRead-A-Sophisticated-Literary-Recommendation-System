@@ -42,7 +42,6 @@ tab1, tab2 = st.tabs(["Home", "Recommend"])
 with tab1:
     st.subheader("Top-20 Popular Books: ")
     st.write(" ")
-    col1 = st.columns(5, gap='small')
     a = 0
 
     
@@ -94,7 +93,7 @@ with tab2:
     if selected_book_for_recommendation is not None:
 
         with st.container(border=True):
-            st.subheader("You have chosen: ")
+            st.subheader("The book you have chosen: ")
             st.image(book_df[book_df["Book-Title"] == selected_book_for_recommendation].drop_duplicates('Book-Title')['Image-URL-M'].iloc[0])
             st.write(selected_book_for_recommendation)
             st.write(book_df[book_df["Book-Title"] == selected_book_for_recommendation].drop_duplicates('Book-Title')['Book-Author'].iloc[0])
