@@ -107,7 +107,3 @@ with tab2:
                 rec_col[i].image(recommended_books[i][2])
                 rec_col[i].write(recommended_books[i][0])
                 rec_col[i].write(recommended_books[i][1])
-            
-                
-
-        
