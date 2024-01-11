@@ -37,6 +37,7 @@ with st.container(border=True):
     st.title("IntellectuaRead: A Sophisticated Literary Recommendation System")
     st.write("  ")
 
+
 tab1, tab2 = st.tabs(["Home", "Recommend"])
 
 with tab1:
@@ -55,6 +56,9 @@ with tab1:
             col1[i].markdown(f'Ratings: {popular_books_df["mean_rating_per_book"].iloc[a]}')
             a = a+1
 
+
+            
+        st.divider()
         col1 = st.columns(5)
         for i in range(5):
             col1[i].image(popular_books_df["Image-URL-M"].iloc[a])
@@ -63,7 +67,8 @@ with tab1:
             col1[i].markdown(f'Votes: {popular_books_df["rating_count_per_book"].iloc[a]}')
             col1[i].markdown(f'Ratings: {popular_books_df["mean_rating_per_book"].iloc[a]}')
             a = a+1
-    
+
+        st.divider()
         col1 = st.columns(5)
         for i in range(5):
             col1[i].image(popular_books_df["Image-URL-M"].iloc[a])
@@ -72,7 +77,9 @@ with tab1:
             col1[i].markdown(f'Votes: {popular_books_df["rating_count_per_book"].iloc[a]}')
             col1[i].markdown(f'Ratings: {popular_books_df["mean_rating_per_book"].iloc[a]}')
             a = a+1
-    
+        
+
+        st.divider()
         col1 = st.columns(5)
         for i in range(5):
             col1[i].image(popular_books_df["Image-URL-M"].iloc[a])
