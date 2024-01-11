@@ -35,7 +35,7 @@ def Recommend_Book(Book_Name):
 
 with st.container(border=True):
     st.title("IntellectuaRead: A Sophisticated Literary Recommendation System")
-    st.write(" ")
+    st.write("  ")
 
 tab1, tab2 = st.tabs(["Home", "Recommend"])
 
